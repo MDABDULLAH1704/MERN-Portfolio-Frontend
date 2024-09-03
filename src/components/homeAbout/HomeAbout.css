@@ -1,0 +1,94 @@
+.homeAbout {
+    height: 100vh;
+    background-color: var(--black-color);
+    padding: 150px;
+}
+
+.homeAbout-left p {
+    color: var(--white-color);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.homeAbout-right {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: var(--white-color);
+}
+
+.homeAbout-right-link {
+    text-decoration: none;
+}
+
+.homeAbout-right-one,
+.homeAbout-right-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--white-color);
+    padding: 8px 40px;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.homeAbout-right-one {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.homeAbout-right-two {
+    color: var(--white-color);
+}
+
+.homeAbout-right-one:hover {
+    transform: scale(1.05);
+}
+
+.homeAbout-right-two:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media(max-width: 768px) {
+    .homeAbout {
+        padding: 150px 50px 180px 50px;
+    }
+
+    .homeAbout-left p {
+        font-size: 22px;
+    }
+
+    .homeAbout-right {
+        margin-top: 50px;
+        margin-left: 15%;
+        margin-right: 15%;
+        flex-direction: column;
+    }
+
+    .homeAbout-right-one,
+    .homeAbout-right-two {
+        padding: 8px 20px;
+    }
+}
+
+@media(max-width: 576px) {
+    .homeAbout {
+        padding: 130px 50px;
+    }
+
+    .homeAbout-left p {
+        font-size: 20px;
+    }
+
+    .homeAbout-right {
+        margin-top: 40px;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}

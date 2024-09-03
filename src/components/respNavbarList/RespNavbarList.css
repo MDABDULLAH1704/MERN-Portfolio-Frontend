@@ -1,0 +1,93 @@
+.respNavbarList {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .respNavbarList {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--black-color);
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: flex-start;
+        padding-left: 3%;
+        padding-top: 100px;
+        height: 100vh;
+        font-size: 60px;
+        line-height: 60px;
+        z-index: 10;
+        animation: slideInFromTop 0.6s ease-out forwards;
+    }
+
+    .respNavbarList div {
+        color: var(--white-color);
+    }
+
+    /* Animation for RespNavbarList */
+    /* Keyframes for sliding in from the top */
+    @keyframes slideInFromTop {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* Keyframes for p tag appearance */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Apply fade-in animation to each p tag with delay */
+    .navbarRight-link p {
+        animation: fadeIn 0.5s ease-out forwards;
+        opacity: 0;
+        /* Start hidden */
+    }
+
+    /* Optional: Adjust the delay for each p tag individually */
+    .navbarRight-link:nth-child(1) p {
+        animation-delay: 0.5s;
+    }
+
+    .navbarRight-link:nth-child(2) p {
+        animation-delay: 0.6s;
+    }
+
+    .navbarRight-link:nth-child(3) p {
+        /* animation-delay: 1.0s; */
+        animation-delay: 0.7s;
+    }
+
+    .navbarRight-link:nth-child(4) p {
+        /* animation-delay: 1.2s; */
+        animation-delay: 0.8s;
+    }
+
+    .navbarRight-link:nth-child(5) p {
+        /* animation-delay: 1.4s; */
+        animation-delay: 0.9s;
+    }
+}
+
+@media(max-width: 576px) {
+    .respNavbarList {
+        padding-left: 5%;
+        font-size: 50px;
+        line-height: 55px;
+    }
+}

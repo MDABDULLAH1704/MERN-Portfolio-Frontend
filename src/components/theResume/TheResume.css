@@ -1,0 +1,87 @@
+.theResume {
+    padding: 60px 150px 60px 150px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.theResume-title {
+    padding-bottom: 15px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.theResume-detailOne,
+.theResume-detailTwo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.theResume-detailTwo {
+    padding-top: 10px;
+}
+
+.theResume-skill {
+    padding-top: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.theResume-skill div {
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive design */
+@media(max-width: 768px) {
+    .theResume {
+        padding: 70px 80px 60px 80px;
+    }
+
+    .theResume-title {
+        padding-bottom: 13px;
+        font-size: 40px;
+    }
+
+    .theResume-detailOne,
+    .theResume-detailTwo {
+        font-size: 19px;
+    }
+
+    .theResume-detailTwo {
+        padding-top: 8px;
+    }
+
+    .theResume-skill {
+        font-size: 38px;
+    }
+
+    .theResume-skill div {
+        font-size: 29px;
+    }
+}
+
+@media(max-width: 576px) {
+    .theResume {
+        padding: 70px 30px 60px 30px;
+    }
+
+    .theResume-title {
+        padding-bottom: 12px;
+        font-size: 35px;
+    }
+
+    .theResume-detailOne,
+    .theResume-detailTwo {
+        font-size: 15px;
+    }
+
+    .theResume-skill {
+        font-size: 35px;
+    }
+
+    .theResume-skill div {
+        font-size: 28px;
+    }
+}

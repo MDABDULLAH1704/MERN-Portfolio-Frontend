@@ -1,0 +1,64 @@
+.respNavbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .respNavbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 20px;
+        z-index: 100;
+    }
+
+    .respNavbar-home {
+        background-color: transparent;
+    }
+
+    .respNavbar-other {
+        background-color: var(--black-color);
+    }
+
+    /* Navbar styles when scrolled */
+    .navbar-scrolled {
+        background-color: var(--black-color);
+    }
+
+    .respNavbarLeft-link {
+        text-decoration: none;
+        color: var(--white-color);
+    }
+
+    .respNavbarLeft {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1.5px solid var(--white-color);
+        padding: 5px 10px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .respNavbarRight {
+        color: var(--white-color);
+        font-size: 28px;
+        cursor: pointer;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        /* Add transition effect */
+    }
+
+
+    .respNavbarRight.faded {
+        opacity: 0.8;
+        /* Optional: makes the icon slightly transparent during transition */
+    }
+
+    .respNavbarRight.active {
+        transform: rotate(360deg);
+        /* Optional: adds a rotation effect */
+    }
+}

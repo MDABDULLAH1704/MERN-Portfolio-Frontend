@@ -1,0 +1,86 @@
+/* HomeQuote-1 */
+.homeQuote1 {
+    padding: 50px 100px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.homeQuote2 {
+    flex-direction: row-reverse;
+}
+
+.homeQuote1-left {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.homeQuote1-left-p1 {
+    font-size: 30px;
+}
+
+.homeQuote1-left-p1 span,
+.homeQuote1-left-p2,
+.homeQuote1-left-p3,
+.homeQuote1-left-p4 {
+    font-size: 80px;
+}
+
+.homeQuote1-left-p3 {
+    text-align: right;
+}
+
+.homeQuote1-right img {
+    height: auto;
+    width: 280px;
+    border-radius: 20px;
+    opacity: 0.8;
+    box-shadow: 0 0 8px var(--white-color);
+    padding: 0.8px;
+}
+
+/* Responsive design */
+@media(max-width: 950px) {
+    .homeQuote1 {
+        padding: 40px 30px;
+    }
+
+    .homeQuote1-left-p1 span,
+    .homeQuote1-left-p2,
+    .homeQuote1-left-p3,
+    .homeQuote1-left-p4 {
+        font-size: 60px;
+    }
+}
+
+@media(max-width: 768px) {
+    .homeQuote1 {
+        padding: 50px 10px 50px 10px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .homeQuote1-right img {
+        width: 265px;
+    }
+}
+
+@media(max-width: 576px) {
+    .homeQuote1 {
+        padding: 50px 10px 50px 10px;
+    }
+
+    .homeQuote1-left-p1 {
+        font-size: 25px;
+    }
+
+    .homeQuote1-left-p1 span,
+    .homeQuote1-left-p2,
+    .homeQuote1-left-p3,
+    .homeQuote1-left-p4 {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,77 @@
+.component2 {
+    padding: 60px 100px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+}
+
+.component2Left img {
+    height: auto;
+    width: 300px;
+    border-radius: 12px;
+    opacity: 0.8;
+    box-shadow: 0 0 6px var(--white-color);
+    padding: 0.5px;
+}
+
+.component2Right {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.component2Right-title {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.component2Right p {
+    padding-bottom: 12px;
+}
+
+/* Responsive design */
+@media(max-width: 950px) {
+    .component2 {
+        padding: 60px 20px;
+        gap: 30px;
+    }
+}
+
+@media(max-width: 768px) {
+    .component2 {
+        padding: 80px 80px 40px 80px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .component2Right {
+        font-size: 23px;
+    }
+
+    .component2Right-title {
+        font-size: 38px;
+    }
+}
+
+@media(max-width: 576px){
+    .component2 {
+        padding: 80px 40px 40px 40px;
+        gap: 40px;
+    }
+
+    .component2Left img {
+        width: 280px;
+    }
+
+    .component2Right {
+        font-size: 16px;
+    }
+
+    .component1Right-title {
+        font-size: 32px;
+    }
+}

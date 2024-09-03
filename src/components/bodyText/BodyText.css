@@ -1,0 +1,154 @@
+.bodyText {
+    position: fixed;
+    top: 150px;
+    left: 70px;
+    color: var(--white-color);
+    line-height: 70px;
+    transition: opacity 0.3s ease;
+    animation: slideInFromTop 2s ease-out forwards;
+}
+
+.bodyText.hidden {
+    /* opacity: 0; */
+    visibility: hidden;
+    /* This ensures the element doesn't take up space */
+    pointer-events: none;
+    /* Optional: Prevent interactions when hidden */
+}
+
+.bodyText-1 i,
+.bodyText-2 i {
+    font-size: 50px;
+}
+
+.bodyText-1 span,
+.bodyText-2 span,
+.bodyText-3,
+.bodyText-4 {
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bodyText-2 {
+    margin-left: 400px;
+}
+
+.bodyText-4 {
+    margin-left: 520px;
+    margin-top: 22px;
+}
+
+/* Animation for BodyText */
+/* Keyframes for sliding in from the top */
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive styles for screens 1024px and below */
+@media (max-width: 1024px) {
+    .bodyText {
+        top: 190px;
+        left: 50px;
+        line-height: 60px;
+    }
+
+    .bodyText-1 i,
+    .bodyText-2 i {
+        font-size: 45px;
+    }
+
+    .bodyText-1 span,
+    .bodyText-2 span,
+    .bodyText-3,
+    .bodyText-4 {
+        font-size: 90px;
+    }
+
+    .bodyText-2 {
+        margin-left: 300px;
+    }
+
+    .bodyText-4 {
+        margin-left: 400px;
+        margin-top: 20px;
+    }
+}
+
+/* Responsive styles for screens 900px and below */
+@media (max-width: 900px) {
+    .bodyText-2 {
+        margin-left: 200px;
+    }
+
+    .bodyText-4 {
+        margin-left: 300px;
+    }
+}
+
+/* Responsive styles for screens 768px and below */
+@media (max-width: 768px) {
+    .bodyText {
+        top: 200px;
+        left: 40px;
+        line-height: 60px;
+    }
+
+    .bodyText-1 i,
+    .bodyText-2 i {
+        font-size: 35px;
+    }
+
+    .bodyText-1 span,
+    .bodyText-2 span,
+    .bodyText-3,
+    .bodyText-4 {
+        font-size: 80px;
+    }
+
+    .bodyText-2 {
+        margin-left: 80px;
+    }
+
+    .bodyText-4 {
+        margin-left: 180px;
+        margin-top: 20px;
+    }
+}
+
+/* Responsive styles for screens 480px and below */
+@media(max-width: 576px) {
+    .bodyText {
+        top: 250px;
+        left: 30px;
+        line-height: 50px;
+    }
+
+    .bodyText-1 i,
+    .bodyText-2 i {
+        font-size: 22px;
+    }
+
+    .bodyText-1 span,
+    .bodyText-2 span,
+    .bodyText-3,
+    .bodyText-4 {
+        font-size: 45px;
+    }
+
+    .bodyText-2 {
+        margin-left: 55px;
+    }
+
+    .bodyText-4 {
+        margin-left: 115px;
+        margin-top: 5px;
+    }
+}
