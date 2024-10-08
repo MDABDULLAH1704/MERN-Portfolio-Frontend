@@ -123,7 +123,7 @@
     }
 }
 
-/* Responsive styles for screens 480px and below */
+/* Responsive styles for screens 576px and below */
 @media(max-width: 576px) {
     .bodyText {
         top: 250px;
@@ -149,6 +149,36 @@
 
     .bodyText-4 {
         margin-left: 115px;
+        margin-top: 5px;
+    }
+}
+
+/* Responsive styles for screens 480px and below */
+@media(max-width: 390px) {
+    .bodyText {
+        top: 250px;
+        left: 25px;
+        line-height: 50px;
+    }
+
+    .bodyText-1 i,
+    .bodyText-2 i {
+        font-size: 20px;
+    }
+
+    .bodyText-1 span,
+    .bodyText-2 span,
+    .bodyText-3,
+    .bodyText-4 {
+        font-size: 40px;
+    }
+
+    .bodyText-2 {
+        margin-left: 45px;
+    }
+
+    .bodyText-4 {
+        margin-left: 95px;
         margin-top: 5px;
     }
 }

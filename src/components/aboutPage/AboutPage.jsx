@@ -22,11 +22,31 @@ const AboutPage = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // preventRightClick function
+    const preventRightClick = (e) => {
+        e.preventDefault();
+    };
+
     return (
         <>
             <section className='aboutPageSection'>
-                <div>
-                    <img src={AboutImg} alt='Image' />
+                <div style={{ position: 'relative' }}>
+                    <img
+                        src={AboutImg}
+                        alt='Image'
+                        onContextMenu={preventRightClick} // Prevent right-click
+                        style={{ display: 'block' }}
+                    />
+                    <div
+                        style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                            backgroundColor: 'rgba(255, 255, 255, 0)', // Transparent overlay
+                        }}
+                    />
                 </div>
             </section>
 

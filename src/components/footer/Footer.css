@@ -18,6 +18,18 @@
     cursor: pointer;
 }
 
+.footerOne-linkedin:hover {
+    color: #0072b1;
+}
+
+.footerOne-github:hover {
+    color: #F4CBB2;
+}
+
+.footerOne-instagram:hover {
+    color: #E1306C;
+}
+
 .footerTwo {
     color: var(--white-color);
     padding-top: 10px;

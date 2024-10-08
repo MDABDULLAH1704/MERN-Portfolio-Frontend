@@ -16,9 +16,9 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className="footerOne">
-                <div onClick={() => openInNewTab('https://www.linkedin.com/in/md-abdullah123/')}><FaLinkedin size={30} /></div>
-                <div onClick={() => openInNewTab('https://github.com/MDABDULLAH1704')}><FaGithub size={30} /></div>
-                <div onClick={() => openInNewTab('https://www.instagram.com/webdeveloper610?igsh=MTVsMjFpNWcwMGgxdQ==')}><FaInstagram size={30} /></div>
+                <div className='footerOne-linkedin' onClick={() => openInNewTab('https://www.linkedin.com/in/md-abdullah123/')}><FaLinkedin size={30} /></div>
+                <div className='footerOne-github' onClick={() => openInNewTab('https://github.com/MDABDULLAH1704')}><FaGithub size={30} /></div>
+                <div className='footerOne-instagram' onClick={() => openInNewTab('https://www.instagram.com/webdeveloper610?igsh=MTVsMjFpNWcwMGgxdQ==')}><FaInstagram size={30} /></div>
             </div>
 
             <div className="footerTwo">

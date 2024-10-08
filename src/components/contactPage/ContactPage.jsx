@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const ContactPage = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false); // loading state
     const navigate = useNavigate();
@@ -20,14 +21,15 @@ const ContactPage = () => {
         setLoading(true);
 
         // Validation checks
-        if (!name || !email || !message) {
+        if (!name || !email || !subject || !message) {
             handleError('All fields are required!');
             setLoading(false);
             return;
         }
 
         try {
-            const result = await axios.post(`https://mern-portfolio-zg94.onrender.com/contact`, { name, email, message });
+            const result = await axios.post(`https://mern-portfolio-zg94.onrender.com/contact`, { name, email, subject, message });
+            // const result = await axios.post(`http://localhost:3000/contact`, { name, email, subject, message });
             console.log(result);
             handleSuccess('Message Sent Successfully');
             setTimeout(() => {
@@ -36,6 +38,8 @@ const ContactPage = () => {
         } catch (error) {
             console.log('Error', error);
             handleError('Failed to send message. Please try again.');
+        } finally {
+            setLoading(false); // Ensure loading state is reset
         }
     }
 
@@ -68,15 +72,23 @@ const ContactPage = () => {
                             />
                         </div>
                         <div className='input'>
-                            <textarea
+                            <input
                                 type='text'
+                                value={subject}
+                                name='subject'
+                                placeholder='Enter subject'
+                                onChange={e => setSubject(e.target.value)}
+                            />
+                        </div>
+                        <div className='input'>
+                            <textarea
                                 value={message}
                                 name='message'
-                                placeholder='Enter your message'
+                                placeholder='Enter message'
                                 onChange={e => setMessage(e.target.value)}
                             />
                         </div>
-                        <button type='submit'>
+                        <button type='submit' >
                             {loading ? 'Wait...' : 'Send Message'}
                         </button>
                     </form>
