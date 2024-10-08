@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import './AboutPage.css'
-import AboutImg from '../../assets/AboutImg.png'
+import React, { useState, useEffect } from 'react';
+import './AboutPage.css';
+import AboutImg from '../../assets/aboutImg.png';
 import TheResume from '../theResume/TheResume';
 
 const AboutPage = () => {
