@@ -3,14 +3,18 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 250px;
     height: 90px;
     padding: 20px;
-    z-index: 1000;
     transition: background-color 0.3s ease;
+}
+
+.menu {
+    display: none;
 }
 
 .navbar-home {
@@ -70,6 +74,33 @@
 
 @media (max-width: 768px) {
     .navbar {
+        gap: 350px;
+    }
+
+    .navbarRight {
         display: none;
+    }
+
+    .menu {
+        display: block;
+        font-size: 30px;
+        color: var(--white-color);
+        transition: transform 0.2s ease;
+    }
+
+    .menu.active {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 580px) {
+    .navbar {
+        gap: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        gap: 120px;
     }
 }

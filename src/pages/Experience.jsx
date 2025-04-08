@@ -1,18 +1,18 @@
 import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import Heading from '../components/heading/Heading'
-import ProjectPage from '../components/projectComponent/projectPage/ProjectPage'
 import HelloWorld from '../components/helloWorld/HelloWorld'
+import ExperiencePage from '../components/experienceComponent/experiencePage/ExperiencePage'
 
-const Projects = () => {
+const Experience = () => {
     return (
         <div>
             <Navbar />
-            <Heading heading='PROJECTS' btn='View Projects' />
-            <ProjectPage />
+            <Heading heading='EXPERIENCES' btn='View Experiences' />
+            <ExperiencePage />
             <HelloWorld padding='80px 10px 120px 10px' />
         </div>
     )
 }
 
-export default Projects
+export default Experience
