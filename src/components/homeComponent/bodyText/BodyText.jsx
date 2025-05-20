@@ -32,7 +32,7 @@ const BodyText = () => {
     return (
         <div className={`bodyText ${scrolled ? 'hidden' : ''}`}>
             <div className='bodyText-1'>
-                <p><i>I'm a </i> <span>WEBSITE</span> </p>
+                <p><i>I'm a </i> <span>PASSIONATE</span> </p>
             </div>
 
             <div className="bodyText-2">

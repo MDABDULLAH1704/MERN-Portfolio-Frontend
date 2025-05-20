@@ -4,33 +4,56 @@ import Component1 from '../../component1/Component1'
 import Component2 from '../../component2/Component2'
 import service1 from '../../../assets/service1.jpeg'
 import service2 from '../../../assets/service2.jpg'
-import service3 from '../../../assets/service3.jpeg'
+import service3 from '../../../assets/service3.jpg'
 
 const ServicePage = () => {
     return (
         <div className='servicePage'>
             <Component1
                 image={service1}
-                title='Custom Website'
-                detailOne='Develop web applications tailored to your business needs using MongoDB, Express.js, React.js, and Node.js for efficient performance.'
-                detailTwo='Build scalable and high-performance systems that can handle growth and adapt to your specific requirements.'
-                detailThree='Ensure a seamless user experience across all devices by implementing responsive designs that adjust to different screen sizes and orientations.'
+                title='Basic Tier'
+                detailOne='👉 Best for individuals, personal branding, and simple online presence.'
+                detailTwo='👉 Like Static Website, Personal Portfolio/Resume Website, Landing Page, Digital CV.'
+                detailThree={
+                    <ul>
+                        <li>Lightweight, static design for quick loading and clear messaging.</li>
+                        <li>Showcase your skills and projects with a sleek, responsive layout.</li>
+                        <li>Engaging design with CTAs ideal for products, events, or offers.</li>
+                        <li>Clickable, downloadable, and styled for professional impact.</li>
+                        <li>Optimized for search engines and seamless on all devices.</li>
+                    </ul>
+                }
             />
 
             <Component2
                 image={service2}
-                title='Full-Stack Website'
-                detailOne='Develop both front-end and back-end solutions, handling everything from user interface design to server-side logic and database management.'
-                detailTwo='Integrate APIs and additional functionality to expand features and enhance system capabilities.'
-                detailThree='Implement responsive designs that adapt to various screen sizes and devices.'
+                title='Standard Tier'
+                detailOne='👉 Great for businesses, organizations, and content-heavy sites.'
+                detailTwo='👉 Like Photography/Art Portfolio, Event/Wedding Website, Multi-Page Company Website, Educational/Coaching Site, Blog/News Site.'
+                detailThree={
+                    <ul>
+                        <li>Structured layouts including About, Services, Contact, FAQs and optional blog sections, tailored to your business needs.</li>
+                        <li>Mobile-friendly interfaces with cross-device compatibility.</li>
+                        <li>Embedded contact forms and internal navigation.</li>
+                        <li>Flexible structures designed to support businesses.</li>
+                        <li>Ideal for establishing an online presence for your business.</li>
+                    </ul>
+                }
             />
 
             <Component1
                 image={service3}
-                title='Frontend Website (using ReactJs)'
-                detailOne='Create dynamic and interactive user interfaces with React.js, leveraging modern hooks and state management solutions.'
-                detailTwo='Design intuitive and user-friendly interfaces with a focus on user experience (UX) and user interface (UI) best practices.'
-                detailThree='Create designs that look great and work well on any device, whether it is a phone, tablet, or computer.'
+                title='Premium Tier'
+                detailOne='👉 Advanced features, scalability, and high-performance custom builds.'
+                detailTwo='👉 Like Restaurant or Cafe Website (with menu/gallery), Product Showcase Website.'
+                detailThree={
+                    <ul>
+                        <li>Built to enhance online visibility, promote digital or physical products, and support brand launches.</li>
+                        <li>Interactive menus, curated photo galleries, and immersive presentation of offerings and ambiance.</li>
+                        <li>Clear pricing, category-based navigation, and integrated testimonials to build trust and drive action.</li>
+                        <li>Strategic CTAs, adaptive layouts, and mobile-first optimization to boost engagement across all devices.</li>
+                    </ul>
+                }
             />
         </div>
     )

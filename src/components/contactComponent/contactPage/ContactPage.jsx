@@ -15,6 +15,7 @@ const ContactPage = () => {
     const [loading, setLoading] = useState(false); // loading state
     const navigate = useNavigate();
 
+
     // handleContact function
     const handleContact = async (e) => {
         e.preventDefault();
@@ -47,7 +48,7 @@ const ContactPage = () => {
         <>
             <div className='contactPage'>
                 <div className="contactPage-left">
-                    <p>Feel free to reach out for project inquiries or collaborations! Just give me a quick overview of what you need, and I’ll get back to you ASAP. Or you can email me directly too.</p>
+                    <p>Feel free to reach out for project inquiries or collaborations! Just give me a quick overview of what you need, and I'll get back to you ASAP. Or you can email me directly too.</p>
                 </div>
 
                 <div className="contactPage-right">

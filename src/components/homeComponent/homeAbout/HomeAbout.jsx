@@ -17,7 +17,7 @@ const HomeAbout = () => {
     return (
         <div className='homeAbout'>
             <div className="homeAbout-left">
-                <p>As a passionate developer, I create simple, innovative and scalable web applications that offer great user experiences. I have strong expertise in building flexible, responsive, and high-performance web applications using modern web development technologies.</p>
+                <p>As a developer, I create simple, innovative and scalable web applications that offer great user experiences. I have strong expertise in building flexible, responsive, and high-performance web applications using modern web development technologies.</p>
             </div>
 
             <div className="homeAbout-right">

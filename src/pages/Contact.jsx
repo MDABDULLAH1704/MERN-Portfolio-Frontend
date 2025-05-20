@@ -11,7 +11,7 @@ const Contact = () => {
             <Navbar />
             <Heading heading='CONTACT' btn='Contact Me' />
             <ContactEmail />
-            <ContactPage />
+            {/* <ContactPage /> */}
             <HelloWorld padding='80px 10px 120px 10px' />
         </div>
     )

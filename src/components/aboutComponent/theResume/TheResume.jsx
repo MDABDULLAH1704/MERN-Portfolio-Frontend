@@ -14,38 +14,34 @@ const TheResume = () => {
     }, []);
 
     // openResume function to handle downloading the resume
-    const openResume = () => {
-        const link = document.createElement('a');
-        link.href = Resume;
-        link.download = 'Resume.pdf';
-        link.click();
-    };
+    // const openResume = () => {
+    //     const link = document.createElement('a');
+    //     link.href = Resume;
+    //     link.download = 'Resume.pdf';
+    //     link.click();
+    // };
 
     return (
         <div className='theResume'>
             <p className='theResume-title'> <i> the Resume </i> </p>
 
             <p className='theResume-detailOne' data-aos='fade'>
-                As a passionate developer, I build all kinds of websites to meet different needs. Whether you need a simple or fast-loading website to showcase your business. I use React.js to create interactive and responsive designs that work perfectly on smartphones, tablets, and desktops. For a touch of extra flair, I add animations to make your site engaging and enjoyable to use. I deliver websites that are not only visually stunning but also powerful and easy to navigate. My goal is to build sites that look great, work flawlessly, and help you stand out online.
+                As a passionate developer, I build all kinds of websites to meet different needs. Whether you need a simple or fast-loading website to showcase your business. I use modern web development technologies to create interactive and responsive designs that work perfectly on smartphones, tablets, and desktops. For a touch of extra flair, I add animations to make your site engaging and enjoyable to use. I deliver websites that are not only visually stunning but also powerful and easy to navigate. My goal is to build sites that look great, work flawlessly, and help you stand out online.
             </p>
 
             <p className='theResume-detailTwo'>Check out my portfolio to see how I can bring your ideas to life online.
             </p>
 
-            <p className='theResume-detailThree' onClick={openResume} style={{ cursor: 'pointer', color: 'white' }}>
+            {/* <p className='theResume-detailThree' onClick={openResume} style={{ cursor: 'pointer', color: 'white' }}>
                 <b>Download Resume</b>
-            </p>
+            </p> */}
 
             <div className='theResume-skill'>
                 <p><b>Software skills</b></p>
                 <div data-aos='fade'>
-                    <p>JavaScript</p>
-                    <p>ReactJs</p>
-                    <p>NodeJs</p>
-                    <p>ExpressJs</p>
-                    <p>MongoDB</p>
-                    <p>CSS</p>
-                    <p>HTML</p>
+                    <p><b>Languages : </b>JavaScript, CSS, HTML</p>
+                    <p><b>Libraries/Frameworks : </b>Next.Js, React, Redux Toolkit, Tailwind CSS</p>
+                    <p><b>Tools : </b>Git, GitHub, VS Code</p>
                 </div>
             </div>
         </div>

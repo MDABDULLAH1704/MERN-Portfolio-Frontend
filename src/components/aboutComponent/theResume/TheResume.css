@@ -43,13 +43,14 @@
 .theResume-skill {
     padding-top: 150px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
+    font-size: 42px;
 }
 
 .theResume-skill div {
     padding-top: 10px;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 50px;
 }
 
 /* Responsive design */
@@ -78,10 +79,11 @@
 
     .theResume-skill div {
         font-size: 29px;
+        line-height: 46px;
     }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 480px) {
     .theResume {
         padding: 70px 30px 60px 30px;
     }
@@ -102,10 +104,11 @@
     }
 
     .theResume-skill {
-        font-size: 35px;
+        font-size: 36px;
     }
 
     .theResume-skill div {
         font-size: 28px;
+        line-height: 42px;
     }
 }
